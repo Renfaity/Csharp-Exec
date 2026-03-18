@@ -1,0 +1,15 @@
+using System;
+class Loja
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Insira o valor gasto: ");
+        double valor_gasto = double.Parse(Console.ReadLine());
+        
+        double valor_desc = valor_gasto - (valor_gasto * 0.10);
+        double valor_parcel = valor_gasto * 1.05;
+        
+        Console.WriteLine($"Valor com desconto é: {valor_desc}");
+        Console.WriteLine($"Valor parcelado em até 3x é: {valor_parcel}");
+    }
+}
